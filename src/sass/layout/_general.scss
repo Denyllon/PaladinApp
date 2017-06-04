@@ -1,0 +1,7 @@
+body {
+    display: flex;
+    font-size: 16px;
+
+    $calc-width: calc(100vw - (100vw - 100%));
+    @include size($calc-width, 100vh);
+}

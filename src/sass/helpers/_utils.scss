@@ -1,0 +1,43 @@
+@mixin size($width, $height) {
+    width: $width;
+    height: $height;
+}
+
+@mixin nav-btn-figure($name, $width, $height, $url) {
+    .icon-#{$name} {
+        background: $nav-bg url($url) no-repeat center ( 37.3px - ( $height / 2));
+        background-size: $width $height;
+    }
+}
+
+@mixin font($family, $size, $weigth, $color) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weigth;
+    color: $color;
+}
+
+@mixin flex-row() {
+    display: flex;
+    flex-direction: row;
+    align-items: center
+}
+
+@mixin flex-col() {
+    display: flex;
+    flex-direction: column;
+    justify-content: center
+}
+
+@mixin padding-left-increase($startValue, $stepValue) {
+
+    $padding-count: $startValue;
+
+    @for $i from 1 through 5 {
+        &:nth-of-type(#{$i}) {
+            padding-left: $padding-count;
+            $padding-count: $padding-count + $stepValue;
+            
+        }
+    }
+}

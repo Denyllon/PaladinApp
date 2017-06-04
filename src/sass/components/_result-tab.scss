@@ -1,0 +1,44 @@
+.result-tab {
+    @include flex-col();
+    font-family: $helvetica-neue;
+    font-weight: bold;
+    flex-grow: 1;
+    height: 76px;
+    background-color: #fff;
+    border: 1px solid $result-bd;
+    padding-left: 19.7px;
+
+    &:nth-of-type(even) {
+        background-color: transparent;
+    }
+
+    &:not(:last-of-type) {
+        border-right-width: 0;
+    }
+
+    &:first-of-type {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+
+    &:last-of-type {
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+    }
+
+    @include padding-left-increase(19.7px, 3.9px);
+
+    .score {
+        font-size: 1.5rem;
+        height: 28px;
+        color: $default-font;
+        margin-bottom: 2px;
+    }
+
+    .description {
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        color: $description;
+    }
+
+}

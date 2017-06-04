@@ -1,0 +1,44 @@
+// NAVIGATION //
+// colors //
+
+$brand-bg: #0c1e30;
+$nav-bg: #04284b;
+
+$nav-btn-bd: #073b6e;
+$nav-btn-hov: #0c1e30;
+$nav-btn-font: #0083ca;
+
+// buttons sizes and img urls //
+$network-btn: "network", 35px, 35px, "../img/nav/network.svg";
+$campaigns-btn: "campaigns", 35px, 31px, "../img/nav/campaigns.svg";
+$locator-btn: "locator", 32px, 32px, "../img/nav/locator.svg";
+$rights-btn: "rights", 33px, 33px, "../img/nav/rights.svg";
+$insights-btn: "insights", 23px, 34px, "../img/nav/insights.svg";
+
+$nav-buttons: $network-btn, $campaigns-btn, $locator-btn, $rights-btn, $insights-btn;
+
+// MAIN SECTION //
+
+$main-bg: #f6f8fb;
+$main-bd: #e9ecef;
+
+// MAIN SECTION - HEADER //
+// colors //
+
+$header-bg: #005dac;
+$header-bd: #0f6ab7;
+$header-divide: #0f6ab7;
+
+// MAIN SECTION CONTENT //
+// colors //
+
+$default-font: #395f83;
+$blue-font: #0083ca;
+$result-bd: #e9ecef;
+$description: #8fa2b5;
+$select-placeholder: #b7c1cf;
+
+// FONTS
+
+$helvetica-neue: "Helvetica Neue-", Helvetica, Arial, sans-serif;
+$helvetica: "Helvetica", Helvetica, Arial, sans-serif;

@@ -1,0 +1,28 @@
+.filter {
+    flex-grow: 1;
+    margin-top: 7px;
+    &:not(:last-of-type) {
+        margin-right: 20px
+    }
+
+    .description {
+        @include font($helvetica-neue, 0.75rem, bold, $default-font);
+        text-transform: uppercase;
+        margin-bottom: 7px;
+    }
+
+    // SELECT btn appearance
+
+    .select-wrapper {
+        position: relative;
+    }
+    .select-wrapper::after {
+        content: "";
+        background: url("../img/main/dropdown-icon.svg") center center no-repeat;
+        top: 18px;
+        right: 15px;
+        position: absolute;
+
+        @include size(10px, 5px);
+    }
+}

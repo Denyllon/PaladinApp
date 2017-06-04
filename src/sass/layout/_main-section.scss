@@ -1,0 +1,49 @@
+#main {
+    flex: 1;
+    flex-shrink: 0;
+    background-color: $main-bg;
+    min-height: 498px;
+    height: 100%;
+    
+}
+
+.userbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $header-bg;
+    border-bottom: 1px solid $header-bd;
+    @include size(100%, 60px);
+}
+
+#app-name {
+    box-sizing: border-box;
+    padding-left: 18.9px;
+
+    min-width: 228.5px;
+    @include font($helvetica, 1.5rem, bold, #fff);
+}
+
+#user-menu {
+    @include font($helvetica-neue, 0.875rem, bold, #fff);
+    position: relative;
+    margin-right: 19.1px;
+
+    &::after {
+        content: "";
+        background: url("../img/main/dropdown-icon.svg") center center no-repeat;
+        top: 5px;
+        right: -19.1px;
+        position: absolute;
+        display: inline-flex;
+
+        @include size(10px, 5px);
+    }
+}
+
+#content {
+    padding: 0px 30px;
+}
+
+
+

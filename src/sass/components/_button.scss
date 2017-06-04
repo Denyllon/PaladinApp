@@ -1,0 +1,98 @@
+// STANDRARD BUTTON
+
+.btn {
+    flex-shrink: 0;
+    height: 40px;
+    padding: 0 14px;
+    margin-right: 20px;
+    border-radius: 3px;
+    background-image: linear-gradient(to bottom, #fefefe, #eeeff1);
+    border: solid 1px #d1d4da;
+    outline: none;
+
+    &:last-of-type {
+        margin-right: 0;
+    }
+    
+    @include font($helvetica-neue, 0.875em, bold, $blue-font);
+
+    &:hover {
+        background-image: linear-gradient(to bottom, #fffff9, #efefed);
+    }
+    &:active {
+         background-image: linear-gradient(to top, #fefefe, #eeeff1);
+    }
+
+    // INVERTED BUTTON
+
+    &.inverted {
+        color: #fff;
+        border-color: #0077ba;
+        background-image: linear-gradient(to bottom, $blue-font, #0075b8);
+
+        &:hover {
+            background-image: none;
+            background-color: #0075b8;
+        }
+
+        &:active {
+            background-image: linear-gradient(to top, $blue-font, #0075b8);
+        }
+    }
+
+    // BUTTONS WITH ICONS
+
+    .arrow {
+        
+        margin: 0 5px;
+        display: inline-block;
+        padding-left: 16px;
+
+        &.up {
+            background: url("../img/main/arrow-up.svg") left center no-repeat;
+        }
+        &.back {
+            background: url("../img/main/arrow-back.svg") left center no-repeat;
+        }
+         
+    }
+
+    .refresh {
+        display: block;        
+        background: url("../img/main/refresh.svg") center center no-repeat;
+        @include size(15px, 19px);
+    }
+
+    // SELECT BUTTON //
+
+    &.select {
+        @include font($helvetica-neue, 0.875em, bold, $default-font);
+        width: 100%;
+
+        // disable appearance
+        appearance: none;
+        &::-ms-expand{
+            display: none;
+        }
+
+        // BUTTON SIZES
+
+        &.xs {
+            min-width: 113px;
+        }
+        &.sm {
+            min-width: 183px;
+        }
+        &.md {
+            min-width: 237px;
+        }        
+
+        &:invalid {
+            color: $select-placeholder;
+            font-size: 0.75em;
+            font-style: italic;
+            font-weight: normal;
+        }
+    }
+    
+}

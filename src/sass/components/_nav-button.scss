@@ -1,0 +1,20 @@
+.nav-button {
+
+    font-family: $helvetica-neue;
+    font-size: 0.625rem;
+    font-weight: bold;
+    color: $nav-btn-font;
+    text-align: center;
+    border-top: 1px solid $nav-btn-bd;
+    @include size(100%, 86.7px);
+
+    &:hover {
+        background-color: $nav-btn-hov;
+    }
+
+    .nav-button-name {
+        margin-top: 58px;
+        cursor: default;
+    }
+    
+} 

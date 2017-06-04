@@ -1,0 +1,26 @@
+#project-tab {
+    @include flex-row();
+    justify-content: space-between;
+    height: 80px;
+    border-bottom: 1px solid #e9ecef;
+    margin-bottom: 18.5px;
+
+    &>* {
+        @include flex-row();
+        flex-flow: nowrap;
+    }
+}
+
+        #project-name {
+            @include font($helvetica-neue, 1.875em, lighter, $default-font);
+            margin-right: 17.9px;
+        }
+
+        #project-gen-date {
+            @include font($helvetica-neue, 0.75em, bold, #b3bec9);
+            margin-right: 5.9px;
+           
+            .date {
+                color: $blue-font;
+            }
+        }

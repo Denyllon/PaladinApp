@@ -1,0 +1,6 @@
+#filters {
+    @include flex-row;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}

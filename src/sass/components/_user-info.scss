@@ -1,0 +1,36 @@
+#user-info {
+    @include flex-row();
+    flex-grow: 1;
+    align-items: center;
+    justify-content: flex-end;
+    min-width: 325px;
+    margin-right: 30px;
+
+    &>*:not(:last-child) {
+        margin-right: 20px;
+    }
+
+}
+
+    #notifications {
+        position: relative;
+        background: url("../img/main/notifications.svg") center no-repeat;
+        @include size(18px, 22px);
+
+        
+    }
+
+    #avatar {
+        background: url("../img/main/avatar.svg") no-repeat;
+        @include size(28px, 28px);
+    }
+
+    .new::after {
+            position: absolute;
+            content: "";
+            right: -3.5px;
+            top: -3.5px;
+            background-color: #fd1312;
+            border-radius: 50%;
+            @include size(7px, 7px);
+        }

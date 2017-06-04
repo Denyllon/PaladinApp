@@ -1,0 +1,20 @@
+#switchbar {
+    background-color: $nav-bg;
+    min-width: 80px;
+
+    .brand-logo {
+        background: $brand-bg url("../img/brand-logo.svg") center center no-repeat;
+        background-size: 24px 36px;
+        @include size(100%, 60px);
+    }
+}
+
+@each $btn in $nav-buttons {
+    @include nav-btn-figure($btn...);
+}   
+
+
+
+
+
+
