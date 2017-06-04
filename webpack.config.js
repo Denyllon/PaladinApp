@@ -8,7 +8,7 @@ module.exports = {
 
     entry: {
         main: "./src/js/main.js",
-        vendor: "angular"
+        vendor: [ "angular", "angular-sanitize" ]
     },
     output: {
         path: resolve(__dirname, "dist/"),
@@ -49,6 +49,11 @@ module.exports = {
             {
                 test: /\.(jpe?g|png|gif|svg)$/i,
                 use: 'file-loader?name=[name].[ext]&publicPath=../&outputPath=img/'
+            },
+            {
+                test: /\.html/,
+                include: resolve(__dirname, "src/views"),
+                use: 'file-loader?name=[name].[ext]&outputPath=views/'
             }
             
         ]

@@ -1,9 +1,10 @@
+import AppController from "./controller/AppController";
 import NavController from "./controller/NavController";
 
-console.dir(NavController);
+const angular = require('angular');
+const ngSanitize = require('angular-sanitize');
 
-var angular = require('angular');
+var app = angular.module("paladinApp", ['ngSanitize']);
 
-var app = angular.module("paladinApp", []);
-
-app.controller("NavController", NavController);
+app.controller("NavController", NavController );
+app.controller("AppController", AppController );

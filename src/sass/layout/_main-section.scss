@@ -19,7 +19,7 @@
 #app-name {
     box-sizing: border-box;
     padding-left: 18.9px;
-
+    text-transform: capitalize;
     min-width: 228.5px;
     @include font($helvetica, 1.5rem, bold, #fff);
 }

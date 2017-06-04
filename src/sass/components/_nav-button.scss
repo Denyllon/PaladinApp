@@ -6,6 +6,7 @@
     color: $nav-btn-font;
     text-align: center;
     border-top: 1px solid $nav-btn-bd;
+    text-transform: uppercase;
     @include size(100%, 86.7px);
 
     &:hover {
