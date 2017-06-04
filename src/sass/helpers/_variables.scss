@@ -6,14 +6,19 @@ $nav-bg: #04284b;
 
 $nav-btn-bd: #073b6e;
 $nav-btn-hov: #0c1e30;
+$nav-btn-act: $nav-btn-hov;
 $nav-btn-font: #0083ca;
 
+$active-green: #62b846;
+$active-red: #ee0034;
+$active-orange: #feb43a;
+
 // buttons sizes and img urls //
-$network-btn: "network", 35px, 35px, "../img/nav/network.svg";
-$campaigns-btn: "campaigns", 35px, 31px, "../img/nav/campaigns.svg";
-$locator-btn: "locator", 32px, 32px, "../img/nav/locator.svg";
-$rights-btn: "rights", 33px, 33px, "../img/nav/rights.svg";
-$insights-btn: "insights", 23px, 34px, "../img/nav/insights.svg";
+$network-btn: "network", 35px, 35px, "../img/nav/network.svg", "../img/nav/network-active.svg";
+$campaigns-btn: "campaigns", 35px, 31px, "../img/nav/campaigns.svg", "../img/nav/campaigns-active.svg";
+$locator-btn: "locator", 32px, 32px, "../img/nav/locator.svg", "../img/nav/locator-active.svg";
+$rights-btn: "rights", 33px, 33px, "../img/nav/rights.svg", "../img/nav/rights-active.svg";
+$insights-btn: "insights", 23px, 34px, "../img/nav/insights.svg", "../img/nav/insights-active.svg";
 
 $nav-buttons: $network-btn, $campaigns-btn, $locator-btn, $rights-btn, $insights-btn;
 

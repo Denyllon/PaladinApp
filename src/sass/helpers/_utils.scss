@@ -3,10 +3,23 @@
     height: $height;
 }
 
-@mixin nav-btn-figure($name, $width, $height, $url) {
+@mixin nav-btn-figure($name, $width, $height, $url, $active-url) {
     .icon-#{$name} {
         background: $nav-bg url($url) no-repeat center ( 37.3px - ( $height / 2));
         background-size: $width $height;
+
+        &.active {
+            background: $nav-bg url($active-url) no-repeat center ( 37.3px - ( $height / 2));
+            background-size: $width $height;
+
+            @if ($name == "campaigns") or ($name == "locator") {
+                color: $active-green;
+            } @else if $name == "rights" {
+                color: $active-red;
+            } @else if $name == "insights" {
+                color: $active-orange;
+            }
+        }
     }
 }
 

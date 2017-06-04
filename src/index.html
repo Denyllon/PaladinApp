@@ -14,7 +14,7 @@
 
             <nav class="navigation" ng-controller="NavController">
                 
-                <div class="nav-button icon-{{item}}" ng-repeat="item in menuItems" ng-click="changeUserbarAppName(item); loadHTML(item)">
+                <div class="nav-button icon-{{item}}" ng-repeat="item in menuItems" ng-click="setActive(item); changeUserbarAppName(item); loadHTML(item)" ng-class="{active : activeItem === item}">
                     <p class="nav-button-name">{{item}}</p>
                 </div>
 

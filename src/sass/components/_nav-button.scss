@@ -7,10 +7,14 @@
     text-align: center;
     border-top: 1px solid $nav-btn-bd;
     text-transform: uppercase;
+    user-select: none;
     @include size(100%, 86.7px);
 
     &:hover {
         background-color: $nav-btn-hov;
+    }
+    &.active {
+        background-color: $nav-btn-act;
     }
 
     .nav-button-name {

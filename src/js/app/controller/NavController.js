@@ -10,6 +10,10 @@ var NavController = function($scope, $compile) {
         contentSection.setAttribute('ng-bind-html', `deliberatelyTrustDangerousSnippet(${site})`);
         $compile(contentSection)($scope);
     };
+    
+    $scope.setActive = function(item) {
+        $scope.activeItem = item;
+    };
 
 };
 
