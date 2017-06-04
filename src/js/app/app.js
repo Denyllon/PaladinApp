@@ -6,5 +6,10 @@ const ngSanitize = require('angular-sanitize');
 
 var app = angular.module("paladinApp", ['ngSanitize']);
 
-app.controller("NavController", NavController );
+AppController.$inject = ['$scope', '$sce', '$http'];
+NavController.$inject = ['$scope', '$compile'];
+
 app.controller("AppController", AppController );
+app.controller("NavController", NavController );
+
+
